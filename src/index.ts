@@ -198,4 +198,3 @@ fetch (url)
     });
   })
 p.textContent = "Hello World";
-note?.appendChild(p);
