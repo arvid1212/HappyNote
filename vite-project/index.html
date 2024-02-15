@@ -3,11 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="./src/App.scss">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HappyNote</title>
+    <title>BrightSideNotes</title>
   </head>
   <body>
-    <div id="root"></div>
+  <div id="notesApp">
+      <div class="header-container" ><h1>BrightSideNote&#8482;</h1></div>
+
+    </div>
+    <form action="ViewUserNotes">
+      <input id="U_Name_Form" type="text" placeholder="Username" class="UName_form">
+
+    </form>
+    <button id="Get_NotesBtn"> View my notes</button>
+
+    <form action="PostNoteForm">
+
+      <input id="Title_Form" type="text" placeholder="Title" class="titleForm">
+      <input id="Note_form" type="text" placeholder="Note" class="noteForm">
+    </form>
+    <button id="PostNotebtn">Save Note</button>
+
+    <article class="notes-article">
+      <h2>Saved Notes <span>&#10003;</span></h2>
+      <section class="user-notes"></section>
+    </article>
+  </div>
+  <div id="result"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
